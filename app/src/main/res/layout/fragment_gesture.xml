@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ium.swag.yolo.saxs.GestureFragment"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gestureImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:layout_above="@+id/barraNavigazione"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barraNavigazione"
+        android:layout_above="@+id/buttonToText"
+        android:layout_alignStart="@+id/gestureImageView">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/playButton"
+            android:drawableLeft="@drawable/play_small"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/stopButton"
+            android:drawableLeft="@drawable/stop_small"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="Output Testuale"
+        android:id="@+id/buttonToText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@color/switchButton"
+        android:textColor="#FFF"/>
+</RelativeLayout>
